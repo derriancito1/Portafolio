@@ -6,39 +6,57 @@
   <title>Portafolio - Jonathan Rodríguez</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
   <style>
+    /* Colores profesionales */
+    :root {
+      --primary-color: #1e3a8a; /* azul marino */
+      --accent-color: #2563eb; /* azul corporativo */
+      --background-color: #f3f4f6; /* gris claro */
+      --text-color: #1f2937; /* gris oscuro */
+      --light-color: #ffffff; /* blanco para tarjetas */
+    }
+
     body {
       font-family: 'Inter', sans-serif;
-      background: #f9fafb;
-      color: #1f2937;
+      background: var(--background-color);
+      color: var(--text-color);
       margin: 0;
       padding: 0;
       line-height: 1.6;
     }
+
     header {
-      background: #1e40af;
-      color: white;
+      background: var(--primary-color);
+      color: var(--light-color);
       text-align: center;
       padding: 2rem 1rem;
     }
+
     header h1 {
       margin: 0;
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
+
     header p {
       margin-top: 0.5rem;
       font-size: 1.1rem;
-      opacity: 0.9;
+      opacity: 0.85;
     }
+
     .section {
       max-width: 1000px;
       margin: 2rem auto;
-      padding: 0 1rem;
+      padding: 1rem;
+      background: var(--background-color);
+      border-radius: 10px;
     }
+
     h2 {
-      border-left: 4px solid #2563eb;
+      border-left: 4px solid var(--accent-color);
       padding-left: 0.5rem;
-      color: #1e3a8a;
+      color: var(--primary-color);
+      margin-bottom: 1rem;
     }
+
     .skills ul {
       display: flex;
       flex-wrap: wrap;
@@ -46,85 +64,128 @@
       padding: 0;
       list-style: none;
     }
+
     .skills li {
       background: #e0e7ff;
-      color: #1e3a8a;
+      color: var(--primary-color);
       padding: 0.4rem 0.8rem;
       border-radius: 20px;
       font-size: 0.9rem;
+      transition: background 0.2s ease;
     }
+
+    .skills li:hover {
+      background: var(--accent-color);
+      color: #fff;
+    }
+
     .projects {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 1.5rem;
     }
+
     .project {
-      background: white;
+      background: var(--light-color);
       border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
       padding: 1rem;
-      transition: transform 0.2s ease;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
     .project:hover {
-      transform: translateY(-4px);
+      transform: translateY(-5px);
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     }
+
     .project h3 {
       margin-top: 0;
-      color: #1e40af;
+      color: var(--primary-color);
     }
+
     .project a {
       text-decoration: none;
-      color: #2563eb;
+      color: var(--accent-color);
       font-weight: 600;
+      transition: color 0.2s ease;
     }
+
+    .project a:hover {
+      color: var(--primary-color);
+    }
+
     .experience-item {
-      background: white;
+      background: var(--light-color);
       border-radius: 10px;
       box-shadow: 0 2px 6px rgba(0,0,0,0.08);
       padding: 1rem 1.2rem;
       margin-bottom: 1.5rem;
+      transition: transform 0.2s ease;
     }
+
+    .experience-item:hover {
+      transform: translateY(-3px);
+    }
+
     .experience-item h3 {
-      color: #1e3a8a;
+      color: var(--primary-color);
       margin-bottom: 0.3rem;
     }
+
     .experience-item h4 {
       margin: 0;
       font-weight: 500;
       color: #374151;
     }
+
     .experience-item ul {
       margin: 0.5rem 0 0.5rem 1.2rem;
     }
+
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      background: #1e3a8a;
-      color: white;
+      background: var(--primary-color);
+      color: var(--light-color);
       margin-top: 3rem;
     }
+
     footer a {
       color: #93c5fd;
       text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    footer a:hover {
+      color: #ffffff;
+    }
+
+    a {
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--primary-color);
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Jonathan Rodríguez</h1>
-    <p>Desarrollador Web | .NET | WordPress | MySQL | PHP | JavaScript</p>
+    <p>Desarrollador Web | .NET | WordPress | MySQL | PHP | JavaScript | Apps Android</p>
   </header>
 
   <section class="section">
     <h2>Perfil Profesional</h2>
     <p>
-      Desarrollador de software senior con más de <strong>12 años de experiencia</strong> en desarrollo de aplicaciones usando 
-      <strong>.NET Core (2.1 a 8)</strong>, <strong>.NET Framework (3.5 a 4.8)</strong>, <strong>C#</strong> y tecnologías web 
-      como <strong>HTML5, CSS3, JavaScript, Bootstrap y WordPress</strong>.  
-      Experto en optimización de bases de datos (<strong>SQL Server, MySQL</strong>), diseño de APIs REST, desarrollo de servicios Windows y automatización de procesos ETL con SSIS.  
-      Manejo avanzado de herramientas como Visual Studio, SQL Management Studio, GitHub, Bitbucket, TFS y Postman.  
-      Fuerte capacidad analítica, liderazgo técnico y experiencia en entornos de misión crítica.  
-      Actualmente enfocado en seguir creciendo en el desarrollo web y CMS como WordPress, combinando mi experiencia backend con habilidades front-end.
+      Ingeniero en Telemática con más de <strong>12 años de experiencia</strong> en desarrollo de software y aplicaciones web.  
+      Experto en <strong>.NET Core, .NET Framework, C#, PHP, WordPress</strong> y tecnologías web <strong>HTML5, CSS3, JavaScript y Bootstrap</strong>.  
+      Experiencia en optimización de bases de datos <strong>SQL Server y MySQL</strong>, diseño de APIs REST, desarrollo de servicios Windows y automatización ETL con SSIS.  
+      Conocimientos en redes y seguridad informática.  
+      Experiencia desarrollando <strong>aplicaciones Android con Java</strong>:
+      <a href="https://play.google.com/store/apps/details?id=com.diversitisystems.calculadorahipoteca" target="_blank">Calculadora Hipotecaria</a> y 
+      <a href="https://play.google.com/store/apps/details?id=com.mexico.aguinaldo.aguinaldomexico" target="_blank">Aguinaldo México</a>.  
+      Actualmente cursando una <strong>Maestría en DevOps</strong> para fortalecer mi enfoque en integración, entrega continua y cultura DevOps.
     </p>
   </section>
 
@@ -143,8 +204,8 @@
       <li>SSIS / ETL</li>
       <li>Git / GitHub / Bitbucket</li>
       <li>IIS / Servicios Windows</li>
-      <li>Spring (Java)</li>
-      <li>Scrum / Trabajo Ágil</li>
+      <li>Apps Android con Java</li>
+      <li>Redes y Seguridad Informática</li>
     </ul>
   </section>
 
@@ -155,19 +216,11 @@
       <h3>Softtek</h3>
       <h4>Software Developer | Jul. 2023 - Actual</h4>
       <ul>
-        <li>Resolución de problemas en IIS, asegurando la disponibilidad y rendimiento de las aplicaciones.</li>
-        <li>Diagnóstico y optimización de consultas lentas en bases de datos SQL Server.</li>
-        <li>Optimización y mantenimiento de servicios de Windows críticos.</li>
-        <li>Implementación de estrategias para manejo de errores en procesos BulkLoad.</li>
+        <li>Resolución de problemas en IIS y optimización de servicios Windows.</li>
+        <li>Optimización de consultas lentas en SQL Server.</li>
         <li>Modificación y optimización de stored procedures.</li>
-        <li>Versionamiento de código con GitHub y gestión de despliegues.</li>
-        <li>Configuración de colas MQ con Java y análisis de logs para causas raíz.</li>
-      </ul>
-      <strong>Logros:</strong>
-      <ul>
-        <li>Optimización de rendimiento de consultas y stored procedures.</li>
-        <li>Implementación de supervisión avanzada mediante logs y alertas por correo.</li>
-        <li>Creación de nuevos servicios en .NET Framework con rendimiento mejorado.</li>
+        <li>Versionamiento de código en GitHub y despliegues coordinados.</li>
+        <li>Configuración de colas MQ y análisis de logs.</li>
       </ul>
     </div>
 
@@ -176,14 +229,9 @@
       <h4>Software Engineer - Senior | Sep. 2022 - Jun. 2023</h4>
       <ul>
         <li>Liderazgo técnico en proyectos .NET Core y Entity Framework.</li>
-        <li>Optimización de rendimiento de agentes de procesamiento y consultas SQL.</li>
-        <li>Desarrollo de nuevas funcionalidades administrativas en sistemas internos.</li>
-        <li>Implementación de técnicas de lazy loading y estrategias de caché.</li>
-      </ul>
-      <strong>Logros:</strong>
-      <ul>
-        <li>Reducción de tiempos de respuesta en stored procedures.</li>
-        <li>Mejoras sustanciales en rendimiento de agentes y procesos internos.</li>
+        <li>Optimización de rendimiento de agentes y consultas SQL.</li>
+        <li>Implementación de nuevas funcionalidades administrativas.</li>
+        <li>Técnicas de lazy loading y estrategias de caché.</li>
       </ul>
     </div>
 
@@ -192,15 +240,9 @@
       <h4>Software Developer | Sep. 2017 - Sep. 2022</h4>
       <ul>
         <li>Desarrollo de aplicaciones .NET Core y Framework.</li>
-        <li>Creación de interfaces responsive con HTML5, CSS3 y Bootstrap.</li>
+        <li>Interfaces responsive con HTML5, CSS3 y Bootstrap.</li>
         <li>Integración de SSIS para procesos ETL y control de datos.</li>
         <li>Uso de TFS para control de versiones y coordinación de tareas.</li>
-      </ul>
-      <strong>Logros:</strong>
-      <ul>
-        <li>Optimización de stored procedures críticos, reduciendo tiempos de ejecución.</li>
-        <li>Implementación de sistema de carrito de ventas telefónico.</li>
-        <li>Desarrollo de metadata para cargas masivas en SQL Server.</li>
       </ul>
     </div>
 
@@ -208,9 +250,7 @@
       <h3>C5 Durango</h3>
       <h4>Software Developer | Ago. 2014 - Sep. 2017</h4>
       <ul>
-        <li>Desarrollo de sistemas internos con PHP, MySQL, API REST y Spring.</li>
-        <li>Creación de reportes técnicos y documentación funcional.</li>
-        <li>Testing y soporte a aplicaciones críticas en entorno gubernamental.</li>
+        <li>Desarrollo de sistemas internos con PHP, MySQL, API REST y soporte a clientes.</li>
       </ul>
     </div>
 
@@ -220,7 +260,6 @@
       <ul>
         <li>Desarrollo y mantenimiento de sitios web en PHP y WordPress.</li>
         <li>Corrección de errores, mejoras de rendimiento y adaptación móvil.</li>
-        <li>Colaboración en e-commerce y optimización de SEO y UX.</li>
       </ul>
     </div>
   </section>
@@ -230,27 +269,27 @@
     <div class="projects">
       <div class="project">
         <h3>Puritronic Paso Real</h3>
-        <p>Sitio corporativo para empresa purificadora. Desarrollado con WordPress y optimización SEO.</p>
+        <p>Sitio corporativo desarrollado con WordPress.</p>
         <a href="https://puritronicpasoreal.com/" target="_blank">Ver sitio →</a>
       </div>
       <div class="project">
         <h3>Diversiti Systems</h3>
-        <p>Portal de servicios tecnológicos con diseño responsive y enfoque profesional.</p>
+        <p>Portal web de servicios tecnológicos con diseño responsive.</p>
         <a href="https://www.diversitisystems.com/" target="_blank">Ver sitio →</a>
       </div>
       <div class="project">
         <h3>POS Puritronic</h3>
-        <p>Aplicación web de punto de venta para control de ventas, stock y reportes (.NET + MySQL).</p>
+        <p>Aplicación web de punto de venta desarrollada en PHP.</p>
         <a href="https://pos.puritronicpasoreal.com/" target="_blank">Ver proyecto →</a>
       </div>
       <div class="project">
         <h3>Caja de Ahorro - Diversiti Systems</h3>
-        <p>Sistema para gestión de préstamos, con backend PHP/MySQL y diseño adaptable.</p>
+        <p>Sistema para gestión de préstamos, backend PHP/MySQL.</p>
         <a href="https://cajadeahorro.diversitisystems.com/" target="_blank">Ver proyecto →</a>
       </div>
       <div class="project">
         <h3>Home Portal - Puritronic</h3>
-        <p>Portal interno centralizado con .NET, integración de módulos y base de datos MySQL.</p>
+        <p>Sistema de inventarios y pedidos a domicilio desarrollado en .NET.</p>
         <a href="https://home.puritronicpasoreal.com/" target="_blank">Ver proyecto →</a>
       </div>
     </div>
@@ -258,7 +297,7 @@
 
   <section class="section">
     <h2>Contacto</h2>
-    <p>📧 <a href="mailto:jonathan@example.com">jonathan@example.com</a></p>
+    <p>📧 <a href="mailto:jonathan_voices@hotmail.com">jonathan_voices@hotmail.com</a></p>
     <p>🌍 México | 💼 Disponible para trabajo remoto</p>
     <p>💻 GitHub: <a href="https://github.com/derriancito1" target="_blank">github.com/derriancito1</a></p>
   </section>
