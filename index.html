@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portafolio - Jonathan Rodríguez</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #f9fafb;
+      color: #1f2937;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #1e40af;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .section {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    h2 {
+      border-left: 4px solid #2563eb;
+      padding-left: 0.5rem;
+      color: #1e3a8a;
+    }
+    .skills ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      padding: 0;
+      list-style: none;
+    }
+    .skills li {
+      background: #e0e7ff;
+      color: #1e3a8a;
+      padding: 0.4rem 0.8rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+    }
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .project {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 1rem;
+      transition: transform 0.2s ease;
+    }
+    .project:hover {
+      transform: translateY(-4px);
+    }
+    .project h3 {
+      margin-top: 0;
+      color: #1e40af;
+    }
+    .project a {
+      text-decoration: none;
+      color: #2563eb;
+      font-weight: 600;
+    }
+    .experience-item {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+      padding: 1rem 1.2rem;
+      margin-bottom: 1.5rem;
+    }
+    .experience-item h3 {
+      color: #1e3a8a;
+      margin-bottom: 0.3rem;
+    }
+    .experience-item h4 {
+      margin: 0;
+      font-weight: 500;
+      color: #374151;
+    }
+    .experience-item ul {
+      margin: 0.5rem 0 0.5rem 1.2rem;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      background: #1e3a8a;
+      color: white;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #93c5fd;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Jonathan Rodríguez</h1>
+    <p>Desarrollador Web | .NET | WordPress | MySQL | PHP | JavaScript</p>
+  </header>
+
+  <section class="section">
+    <h2>Perfil Profesional</h2>
+    <p>
+      Desarrollador de software senior con más de <strong>12 años de experiencia</strong> en desarrollo de aplicaciones usando 
+      <strong>.NET Core (2.1 a 8)</strong>, <strong>.NET Framework (3.5 a 4.8)</strong>, <strong>C#</strong> y tecnologías web 
+      como <strong>HTML5, CSS3, JavaScript, Bootstrap y WordPress</strong>.  
+      Experto en optimización de bases de datos (<strong>SQL Server, MySQL</strong>), diseño de APIs REST, desarrollo de servicios Windows y automatización de procesos ETL con SSIS.  
+      Manejo avanzado de herramientas como Visual Studio, SQL Management Studio, GitHub, Bitbucket, TFS y Postman.  
+      Fuerte capacidad analítica, liderazgo técnico y experiencia en entornos de misión crítica.  
+      Actualmente enfocado en seguir creciendo en el desarrollo web y CMS como WordPress, combinando mi experiencia backend con habilidades front-end.
+    </p>
+  </section>
+
+  <section class="section skills">
+    <h2>Habilidades Técnicas</h2>
+    <ul>
+      <li>.NET Core / .NET Framework</li>
+      <li>C#</li>
+      <li>SQL Server / MySQL</li>
+      <li>WordPress</li>
+      <li>PHP</li>
+      <li>HTML5 / CSS3</li>
+      <li>JavaScript / jQuery</li>
+      <li>APIs REST / JSON / XML</li>
+      <li>Bootstrap</li>
+      <li>SSIS / ETL</li>
+      <li>Git / GitHub / Bitbucket</li>
+      <li>IIS / Servicios Windows</li>
+      <li>Spring (Java)</li>
+      <li>Scrum / Trabajo Ágil</li>
+    </ul>
+  </section>
+
+  <section class="section">
+    <h2>Experiencia Profesional</h2>
+
+    <div class="experience-item">
+      <h3>Softtek</h3>
+      <h4>Software Developer | Jul. 2023 - Actual</h4>
+      <ul>
+        <li>Resolución de problemas en IIS, asegurando la disponibilidad y rendimiento de las aplicaciones.</li>
+        <li>Diagnóstico y optimización de consultas lentas en bases de datos SQL Server.</li>
+        <li>Optimización y mantenimiento de servicios de Windows críticos.</li>
+        <li>Implementación de estrategias para manejo de errores en procesos BulkLoad.</li>
+        <li>Modificación y optimización de stored procedures.</li>
+        <li>Versionamiento de código con GitHub y gestión de despliegues.</li>
+        <li>Configuración de colas MQ con Java y análisis de logs para causas raíz.</li>
+      </ul>
+      <strong>Logros:</strong>
+      <ul>
+        <li>Optimización de rendimiento de consultas y stored procedures.</li>
+        <li>Implementación de supervisión avanzada mediante logs y alertas por correo.</li>
+        <li>Creación de nuevos servicios en .NET Framework con rendimiento mejorado.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Teleperformance</h3>
+      <h4>Software Engineer - Senior | Sep. 2022 - Jun. 2023</h4>
+      <ul>
+        <li>Liderazgo técnico en proyectos .NET Core y Entity Framework.</li>
+        <li>Optimización de rendimiento de agentes de procesamiento y consultas SQL.</li>
+        <li>Desarrollo de nuevas funcionalidades administrativas en sistemas internos.</li>
+        <li>Implementación de técnicas de lazy loading y estrategias de caché.</li>
+      </ul>
+      <strong>Logros:</strong>
+      <ul>
+        <li>Reducción de tiempos de respuesta en stored procedures.</li>
+        <li>Mejoras sustanciales en rendimiento de agentes y procesos internos.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Teleperformance</h3>
+      <h4>Software Developer | Sep. 2017 - Sep. 2022</h4>
+      <ul>
+        <li>Desarrollo de aplicaciones .NET Core y Framework.</li>
+        <li>Creación de interfaces responsive con HTML5, CSS3 y Bootstrap.</li>
+        <li>Integración de SSIS para procesos ETL y control de datos.</li>
+        <li>Uso de TFS para control de versiones y coordinación de tareas.</li>
+      </ul>
+      <strong>Logros:</strong>
+      <ul>
+        <li>Optimización de stored procedures críticos, reduciendo tiempos de ejecución.</li>
+        <li>Implementación de sistema de carrito de ventas telefónico.</li>
+        <li>Desarrollo de metadata para cargas masivas en SQL Server.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>C5 Durango</h3>
+      <h4>Software Developer | Ago. 2014 - Sep. 2017</h4>
+      <ul>
+        <li>Desarrollo de sistemas internos con PHP, MySQL, API REST y Spring.</li>
+        <li>Creación de reportes técnicos y documentación funcional.</li>
+        <li>Testing y soporte a aplicaciones críticas en entorno gubernamental.</li>
+      </ul>
+    </div>
+
+    <div class="experience-item">
+      <h3>Publicidad y Páginas Web</h3>
+      <h4>Web Developer | Ene. 2013 - Ago. 2014</h4>
+      <ul>
+        <li>Desarrollo y mantenimiento de sitios web en PHP y WordPress.</li>
+        <li>Corrección de errores, mejoras de rendimiento y adaptación móvil.</li>
+        <li>Colaboración en e-commerce y optimización de SEO y UX.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Proyectos Destacados</h2>
+    <div class="projects">
+      <div class="project">
+        <h3>Puritronic Paso Real</h3>
+        <p>Sitio corporativo para empresa purificadora. Desarrollado con WordPress y optimización SEO.</p>
+        <a href="https://puritronicpasoreal.com/" target="_blank">Ver sitio →</a>
+      </div>
+      <div class="project">
+        <h3>Diversiti Systems</h3>
+        <p>Portal de servicios tecnológicos con diseño responsive y enfoque profesional.</p>
+        <a href="https://www.diversitisystems.com/" target="_blank">Ver sitio →</a>
+      </div>
+      <div class="project">
+        <h3>POS Puritronic</h3>
+        <p>Aplicación web de punto de venta para control de ventas, stock y reportes (.NET + MySQL).</p>
+        <a href="https://pos.puritronicpasoreal.com/" target="_blank">Ver proyecto →</a>
+      </div>
+      <div class="project">
+        <h3>Caja de Ahorro - Diversiti Systems</h3>
+        <p>Sistema para gestión de préstamos, con backend PHP/MySQL y diseño adaptable.</p>
+        <a href="https://cajadeahorro.diversitisystems.com/" target="_blank">Ver proyecto →</a>
+      </div>
+      <div class="project">
+        <h3>Home Portal - Puritronic</h3>
+        <p>Portal interno centralizado con .NET, integración de módulos y base de datos MySQL.</p>
+        <a href="https://home.puritronicpasoreal.com/" target="_blank">Ver proyecto →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2>Contacto</h2>
+    <p>📧 <a href="mailto:jonathan@example.com">jonathan@example.com</a></p>
+    <p>🌍 México | 💼 Disponible para trabajo remoto</p>
+    <p>💻 GitHub: <a href="https://github.com/derriancito1" target="_blank">github.com/derriancito1</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Jonathan Rodríguez | Portafolio Web</p>
+  </footer>
+</body>
+</html>
